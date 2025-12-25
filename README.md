@@ -8,7 +8,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker)
 
 ## 📸 Screenshot
-![App Interface](screenshot.png)
+![App Interface](\screenshot.png)
 
 🛠 Архитектура
 Проект состоит из двух изолированных контейнеров, связанных через внутреннюю сеть Docker:
