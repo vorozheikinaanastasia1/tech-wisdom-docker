@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web-app:
+    build: ./app
+    container_name: wisdom-app
+    ports:
+      
+      - "6379:5000"
+    environment:
+      - REDIS_HOST=db
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: redis:alpine
+    container_name: wisdom-redis
+    restart: always
